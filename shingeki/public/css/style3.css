@@ -1,0 +1,356 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #E5E5E5;
+}
+
+/* 
+ Paleta de cores:
+ #664a31
+ #b9804f
+ #c58277
+
+ #1d1c1d
+#f6db9a */
+
+.header {
+    height: 12vh;
+   /*  background-image: url('/site/imagens/back-ground-header.png');
+    background-repeat: repeat;
+    background-size: cover; */
+    background-color: #1b0b0b;
+    border-bottom: #fac2ac 3px solid;
+}
+
+.container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+   
+}
+
+.header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.header h1 {
+    color:#f6db9a;/* 
+    background-color: #bdb4b483; */
+    border-radius: 20px;
+    
+}
+
+.navbar {
+  
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.navbar li {
+    margin-right: 50px;
+    font-weight: lighter;
+    color: #f6db9a;/* 
+    background-color: #bdb4b463; */
+    border-radius: 20px;
+}
+
+.navbar li:hover {
+    color: black;
+    
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #f6cb9a;/* 
+    background-color: #bdb4b471; */
+    border-radius: 20px;
+}
+.navbar li a:hover {
+    color: #962929;
+    /* 
+    background-color: #bdb4b4ab; */
+    border-radius: 20px;
+}
+.navbar .active {
+    font-weight: bolder;
+}
+
+.banner {
+    height: 700px;
+    background-image: url("/shingeki/public/imagens/banner3.png");
+    background-size: cover;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.banner p {
+    font-weight: 600;
+    font-size: 25px;
+    font-family: cursive;
+    margin-right: 30px;
+    color: #290202;
+}
+
+
+
+
+.proposito {
+    
+    height: 140vh;
+    background-color: #E5E5E5;
+    align-items: initial;
+}
+
+.proposito .container {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.proposito .container h2 {
+    padding: 25px;
+    border-radius: 25px;
+    color:  #b9804f;
+}
+
+.proposito .container .militar div img {
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+} 
+
+.proposito .container .militar {
+   
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.proposito .container .militar div {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.proposito .container .militar div h3 {
+   color:  #b9804f; 
+   font-weight: bolder;
+   margin: 25px 0;
+}
+
+.container .gif{
+    margin-left: 23%;
+    margin-top: 10%;
+    border-radius:20px;
+    box-shadow: rgba(119, 8, 8, 0.644) 5px 5px;
+    
+
+  
+}
+
+.img-{
+    height: 100px;
+}
+
+.footer {
+   
+    clear: both;
+    position: relative;
+    height: 90px;  
+    background-color: #1b0b0b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+    color: white;
+}
+button{
+    cursor: pointer;
+    
+    
+}
+
+
+
+.banner .formLogin {
+    background-color:#1d1c1d8f;
+    height: 300px;
+    width: 30%;
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 30%;
+}
+
+.banner .formLogin h2 {
+    color:  #bdb4b4;
+}
+
+.banner .formLogin div {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner .formLogin div span {
+    color:  #bdb4b4;
+    font-weight: 600;
+}
+
+.banner .formLogin  input {
+    border: 2px solid  #bb8a03;
+    height: 18px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.banner .formLogin button {
+    background-color: #b9804f;
+    border: solid 2px 2px #a37f1d ;
+    color: rgb(53, 49, 49);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.banner .formLogin span {
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+}
+.formulario {
+    background-color:#1d1c1d8f;
+    height: 400px;
+    width: 30%;
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 30%;
+} 
+
+input {
+    height: 30px;
+    border: 2px solid #E6005A;
+    border-radius: 10px;
+}
+
+.btn {
+    width: 120px;
+    align-self: center;
+    border: 0;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px 15px;
+    color: white;
+    background-color: #b9804f;
+    width: 120px;
+    align-self: center;
+}
+
+
+
+input {
+    height: 30px;
+    border: 2px solid #b9804f;
+    border-radius: 10px;
+}
+
+
+
+#bt{
+    height: 26px;
+    border-radius: 22px 3px;
+    background-color: #ca905d;
+    border-color: #996f2c;
+    
+}
+
+
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.banner .issues {
+    background-color:#1d1c1d8f;
+    color: wheat;
+    height: 500px;
+    width: 40%;
+    display: flex;
+    border-radius: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.banner .issues input{
+    border-radius: 20px;
+    height: 30px;
+    border:#290202 3px 3px ;
+}
+
+.banner .issues select{
+    border-radius: 20px;
+    height: 30px;
+    border:#290202 3px 3px ;
+}
+
+.banner .issues button{
+    border-radius: 20px;
+    height: 30px;
+    width: 150px;
+    border:#290202 3px 3px ;
+    background-color:#bdb4b4 ;
+}
+
+.container .sorteio{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px ;
+    margin-left: 25%;
+    height: 40vh;
+}
+
+.container .sorteio select{
+    height: 20px;
+    width: 200px;
+}
+
+.container .sorteio button{
+    height: 20px;
+    width: 200px;
+}
+
+.sorteio #imagem {
+    font-size: 20px;
+
+}
+

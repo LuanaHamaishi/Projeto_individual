@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style3.css">
+    <link rel="shortcut icon" href="./imagens/icon.jpg" type="image/x-icon">
+    <title>Inicio</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+          <h1>Shingeki no Kyojin</h1>
+           <ul class="navbar">
+            <li class="active"><a href="index.html">Início</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li>|</li>
+            <li><a href="./cadastro.html">Cadastro</a></li> 
+            <li><a href="contato.html">Contato</a></li>
+          </ul> 
+        </div>
+      </div>
+    
+
+
+   
+    <div class="banner">
+        <p>
+            Shingeki no Kyojin
+        </p>
+    </div>
+
+    <div class="proposito">
+        <div class="container">
+
+            <h2>História</h2>
+            <p>
+                A trama é ambientada em um mundo no qual existem titãs comedores de pessoas, e a humanidade vive em uma cidade cercada por várias muralhas para impedir que essas forças gigantescas ataquem. O protagonista é Eren, um garoto que vê sua mãe ser devorada por uma titã durante uma invasão e decide entrar na armada militar que caça essas criaturas. Ah, tem mais uma coisa importante: logo no começo da história descobrimos que Eren é capaz de se transformar em um titã.
+
+                Attack on Titan
+                Divulgação
+                Essa é a premissa básica da trama. Como Eren é capaz de se transformar em um titã, o público é levado a se questionar se os outros titãs também são seres humanos, e a dúvida vai aumentando quando, mais pra frente, os personagens enfrentam uma titã fêmea capaz de raciocinar.
+                
+                Como toda história que deseja segurar o interesse do público, existe um grande mistério na trama: o pai de Eren deixou uma chave com o garoto que serve para abrir o porão da antiga casa, localizada em uma região tomada pelos titãs após o rompimento da muralha. Assim, parte da terceira temporada é basicamente os personagens participando de uma grande guerra para chegar ao porão e descobrir o mistério do mundo (em vários episódios com flashbacks reveladores).
+            </p>
+            <h2>Forças militares</h2>
+            <div class="militar">
+                <div>
+                    <img  class="img-"src="./imagens/exploração.jpg" alt="Escudo da tropa de exploração">
+                    <h3>Tropa de Exploração</h3>
+                    <p>
+                        A Divisão de Reconhecimento (popularmente conhecida coma Tropa de Exploração) é a divisão
+                        militar especializada em lidar com os titãs. Os soldados desta divisão se focam na pesquisa
+                        sobre os titãs e na exploração do território além das Muralhas atrás de recursos.
+
+                    </p>
+                </div>
+                <div>
+                    <img class="img-"src="./imagens/guarnição.jpg" alt="Escudo da guarnição">
+                    <h3>Guarnição</h3>
+                    <p>
+                        A Tropa estacionária é a maior das divisões militares que protege e mantém a ordem dentro dos
+                        Muros. Dada a taxa de letalidade da ropa de Exploração e a entrada limitada da Polícia Militar,
+                        a maioria dos soldados se juntam à Tropa estacionária. Como eles muitas vezes não têm contato
+                        próximo com os titans e mais contato com civis humanos, eles são proficientes em uma ampla
+                        variedade de tarefas, tais como batalhas defensivas, bombardeio, detalhe de segurança, controle
+                        de multidões, e uso de rifle.
+
+                    </p>
+                </div>
+                <div>
+                    <img class="img-"src="./imagens/pm-snk.jpg" alt="Escudo da policia militar">
+                    <h3>Polícia militar</h3>
+                    <p>
+                        A Polícia Militar é a de maior prestígio devido ao seu trabalho, permitindo-lhes viver dentro da
+                        parede interna. No entanto, também é o setor militar mais corrompido devido a falta de
+                        fiscalização em relação aos outros setores das forças armadas. Apenas os dez melhores alunos de
+                        esquadrão de treinamento podem se inscrever para a Polícia Militar.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <img class="gif" src="./imagens/gif-levi.gif">
+    </div>
+
+
+    <div class="container">
+        <div class="sorteio">
+            <h2 class="sorteioP">Sorteio de personagem</h2>
+            <p>Aperte o botão e sorteie um personagem </p>
+            <br><br>
+            <audio id="audio" src="./imagens/shingeki.mp3" autoplay="false" ></audio>
+            <button id="bt" onclick="bt_sort()"> Sortear Personagem 💕 </button>
+            <div id="imagem">
+               
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <p>Designed by Luana Hamaishi© 2021</p>
+    </div>
+
+
+</body>
+
+</html>
+
+<script>
+    function bt_sort() {
+       var sound = document.getElementById("audio");
+          sound.play(); 
+        imagem.innerHTML = '';
+
+        for (var index = 1; index <= 1; index++) {
+            var aleatorio = (Number(Math.random() * 15 )).toFixed();
+            if (aleatorio == 1 || aleatorio == 0) {
+                imagem.innerHTML += `O pesonagem sorteado foi o Levi
+                    <img src="./imagens/levi.jpg" style="height:100px;">
+                `
+            } else if (aleatorio == 2){
+                imagem.innerHTML += `O pesonagem sorteado foi o Eren
+                    <img src="./imagens/eren.jpg"style="height:100px;">
+                    var sound = document.getElementById("audio");
+          sound.play();
+                    <audio id="audio" src="./imagens/shingeki.mp3" autoplay="false" ></audio>
+                `
+            } else if (aleatorio == 3){
+                imagem.innerHTML += `O pesonagem sorteado foi o Armin
+                    <img src="./imagens/armin.jpg"style="height:100px;">
+                `
+            } else if (aleatorio == 4){
+                imagem.innerHTML += `O pesonagem sorteado foi o Erwin
+                    <img src="./imagens/erwin.jpg"style="height:100px;">
+                `
+            } else if (aleatorio == 5){
+                imagem.innerHTML += `O pesonagem sorteado foi a Hange
+                    <img src="./imagens/hange.jpg"style="height:100px;">
+                `
+            } else if (aleatorio == 6){
+                imagem.innerHTML += `O pesonagem sorteado foi a Historia
+                    <img src="./imagens/historia.png"style="height:100px;">
+                `
+            } else if (aleatorio == 7){
+                imagem.innerHTML += `O pesonagem sorteado foi a Mikasa
+                    <img src="./imagens/mikasa.jpg"style="height:100px;">
+                `
+            } else if (aleatorio == 8){
+                imagem.innerHTML += `O pesonagem sorteado foi a Ymir
+                    <img src="./imagens/ymir.jpg"style="height:100px;">
+                `
+            } else if (aleatorio == 9){
+                imagem.innerHTML += `O pesonagem sorteado foi o Galliard
+                    <img src="./imagens/galliard.jpg"style="height:100px;">
+                `
+            } else if (aleatorio == 10){
+                imagem.innerHTML += `O pesonagem sorteado foi o Bertholdt
+                    <img src="./imagens/bertholdt.jpg"style="height:100px;">
+                `
+            } else if (aleatorio == 11){
+                imagem.innerHTML += `O pesonagem sorteado foi a Sasha
+                    <img src="./imagens/sasha.jpg"style="height:100px;">
+                `
+            } else if (aleatorio == 12){
+                imagem.innerHTML += `O pesonagem sorteado foi o Falco
+                    <img src="./imagens/falco.jpg"style="height:100px;">
+                `
+            } else if (aleatorio == 13){
+                imagem.innerHTML += `O pesonagem sorteado foi a Gabi
+                    <img src="./imagens/gabi.jpg"style="height:100px;">
+                `
+            } else if (aleatorio == 14){
+                imagem.innerHTML += `O pesonagem sorteado foi a Pieck
+                    <img src="./imagens/pieck.jpg"style="height:100px;">
+                `
+            } else if (aleatorio == 15){
+                imagem.innerHTML += `O pesonagem sorteado foi o Reiner
+                    <img src="./imagens/reiner.jpg"style="height:100px;">
+                `
+            }
+        
+        }
+    }
+</script>
+
+<!-- 
+     <audio id="audio" src="http://www.soundjay.com/button/beep-07.wav" autoplay="false" ></audio>
+    <a onclick="playSound();"> Play</a>
+    <script>
+    function playSound() {
+          var sound = document.getElementById("audio");
+          sound.play();
+      }
+    </script>
+ -->

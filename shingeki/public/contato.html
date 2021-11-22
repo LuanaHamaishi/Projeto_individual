@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style3.css">
+  <link rel="shortcut icon" href="./imagens/icon.jpg" type="image/x-icon">
+  <title>Contato</title>
+</head>
+
+<body>
+
+  <div class="header">
+    <div class="container">
+      <h1>Shingeki no Kyojin</h1>
+      <ul class="navbar">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li>|</li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li class="active"><a href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="banner">
+    <div class="issues">
+      <h2>Como eu posso te ajudar hoje?</h2>
+      <div>
+        <span>Qual seu problema??</span> <select id="issues">
+          <option disabled selected value="">Selecione uma opção</option>
+          <option value="accountIssues">Problemas com a conta</option>
+          <option value="loginIssues">Problemas com o login</option>
+          <option value="support">Suporte </option>
+          <option value="webIssues">Problemas com o site</option>
+          <option value="deleteAccount">Apagar minha conta</option>
+          <option value="other">Outro problema</option>
+        </select>
+      </div>
+      <div id="otherIssue" style="display: none;">
+        <span>Qual o seu problema?</span>
+        <input type="text" id="outro">
+      </div>
+      <div>
+        <span>Insira seu e-mail:</span>
+        <input type="text" placeholder="seuemail@seuemail.com"id="emailSupport">
+      </div>
+      <div>
+        <span>Insira seu celular:</span>
+        <input type="text" placeholder="(xx)xxxx-xxxx"id="numberSupport">
+      </div>
+      <div>
+        <span>Me conte mais sobre seu problema:</span>
+        <input type="text" id="more">
+      </div>
+      <button>Enviar</button>
+    </div>
+  </div>
+  <div class="footer">
+    <p>Designed by Luana Hamaishi© 2021</p>
+  </div>
+
+</body>
+
+</html>

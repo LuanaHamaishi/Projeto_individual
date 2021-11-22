@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style3.css">
+  <link rel="shortcut icon" href="./imagens/icon.jpg" type="image/x-icon">
+  <title>Login</title>
+</head>
+
+<body>
+
+  <div class="header">
+    <div class="container">
+      <h1>Shingeki no Kyojin</h1>
+      <ul class="navbar">
+        <li ><a href="index.html">Início</a></li>
+        <li class="active"><a href="login.html">Login</a></li>
+        <li>|</li>
+        <li ><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="banner">
+    <div class="formLogin">
+        <h2>Seja bem-vindo!</h2>
+        <div>
+            <span>E-mail: </span> 
+            <input type="text" placeholder="Insira o e-mail para login">
+        </div>
+        <div>
+            <span>Senha: </span>
+            <input type="password" placeholder="* * * * * * * * *">
+        </div>
+        <audio id="audio" src="./imagens/tatakae.mp3" autoplay="false" ></audio>
+        <button onclick="ent()">Entrar</button>
+        <span>Não tem conta?? Se cadastre <a href="cadastro.html">Aqui</a></span>
+    </div>
+</div>
+
+<div class="footer">
+  <p>Designed by Luana Hamaishi© 2021</p>
+</div>
+    
+</body>
+</html>
+<script>
+  function ent() {
+    var sound = document.getElementById("audio");
+          sound.play();
+  }
+</script>
+
+
