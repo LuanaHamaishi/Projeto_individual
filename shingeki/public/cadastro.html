@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/shingeki/public/imagens/icon.jpg">
+    <script src="./assets/js/funcoes.js"></script>
     <link rel="stylesheet" href="./css/style3.css">
 
     <title>Página Inicial</title>
 
 
-    <script src="./assets/js/funcoes.js"></script>
 
 
 </head>
@@ -38,7 +38,7 @@
 
         <div class="formulario">
             <h2>Bem-vindo!</h2>
-            <form id="formCad" method="post" onsubmit="return cadastrar()">
+            <form id="formCad" method="POST" onsubmit="return cadastrar()">
                 Nome:
                 <input name="nome" type="text" placeholder="Seu nome">
                 <br>
@@ -109,19 +109,19 @@
             if (confirmacaoSenha == "") {
                 console.log('confirmacaoSenha está em branco')
             }
-            finalizarAguardar();
+            /* finalizarAguardar(); */
             return false;
         }
 
         if (email.indexOf("@") == -1 || email.indexOf(".com") == -1) {
             window.alert("Ops, e-mail inválido! Verifique e tente novamente.");
-            finalizarAguardar();
+          /*   finalizarAguardar(); */
             return false;
         }
 
         if (senha != confirmacaoSenha) {
             window.alert("As senhas inseridas devem ser iguais para prosseguir!");
-            finalizarAguardar();
+            /* finalizarAguardar(); */
             return false;
         }
 
@@ -136,13 +136,13 @@
                 window.alert("Cadastro realizado com sucesso!");
                 window.location = "login.html";
                 limparFormulario();
-                finalizarAguardar();
+                /* finalizarAguardar(); */
             } else {
                 throw ("Houve um erro ao tentar realizar o cadastro!");
             }
         }).catch(function (resposta) {
             console.log(`#ERRO: ${resposta}`);
-            finalizarAguardar();
+            /* finalizarAguardar(); */
         });
 
         return false;

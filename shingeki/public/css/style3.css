@@ -86,7 +86,7 @@ body{
 
 .banner {
     height: 700px;
-    background-image: url("/shingeki/public/imagens/banner3.png");
+    background-image: url("../imagens/banner3.png");
     background-size: cover;
     display: flex;
     justify-content: right;
@@ -146,7 +146,7 @@ body{
     align-items: center;
     text-align: center;
 }
-
+ 
 .proposito .container .militar div h3 {
    color:  #b9804f; 
    font-weight: bolder;
@@ -189,7 +189,7 @@ button{
 
 
 
-.banner .formLogin {
+.banner .formlogin {
     background-color:#1d1c1d8f;
     height: 300px;
     width: 30%;
@@ -201,28 +201,28 @@ button{
     margin-right: 30%;
 }
 
-.banner .formLogin h2 {
+.banner .formlogin h2 {
     color:  #bdb4b4;
 }
 
-.banner .formLogin div {
+.banner .formlogin div {
     display: flex;
     flex-direction: column;
 }
 
-.banner .formLogin div span {
+.banner .formlogin div span {
     color:  #bdb4b4;
     font-weight: 600;
 }
 
-.banner .formLogin  input {
+.banner .formlogin  input {
     border: 2px solid  #bb8a03;
     height: 18px;
     border-radius: 10px;
     padding: 10px;
 }
 
-.banner .formLogin button {
+.banner .formlogin button {
     background-color: #b9804f;
     border: solid 2px 2px #a37f1d ;
     color: rgb(53, 49, 49);
@@ -231,7 +231,7 @@ button{
     border-radius: 10px;
 }
 
-.banner .formLogin span {
+.banner .formlogin span {
     font-size: 16px;
     font-weight: 600;
     color: black;
@@ -278,13 +278,6 @@ input {
 
 
 
-#bt{
-    height: 26px;
-    border-radius: 22px 3px;
-    background-color: #ca905d;
-    border-color: #996f2c;
-    
-}
 
 
 
