@@ -6,42 +6,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./dashboards.css">
-   
+    <link rel="shortcut icon" href="../imagens/icon.jpg" type="image/x-icon">
+    <script src="../assets/js/funcoes.js"></script>
+
     <title>Dashboard</title>
 
 
 </head>
-<!-- onload="validarSessao(),  obterDadosGrafico(1)"> -->
-<body >
-    
+<!-- onload="validarSessao()"> -->
+
+<body>
+
+
     <div class="container">
-            <div class="bar">
-                <h1>進撃の巨人</h1>
-                <p>Olá amigo(a)!
-                    <br>
-                    Fico muito feliz em ter você aqui!!!
-                </p>
-            </div>
-            <div id="fav_char">
-                <h1>Qual o seu personagem favorito de SNK??</h1>
-            </div>
+        <div class="bar">
+            <h2>Shingeki no Kyojin</h1>
+        </div>
+        <div class="container">
+            <div class="partes">
+                <div class="q1">
 
+                </div>
+                <div class="q2">
 
+                </div>
+                <div class="q3">
 
-            <div class="sorteio">
-                <h2 class="sorteioP">Sorteio de personagem</h2>
-                <p>Aperte o botão e sorteie um personagem </p>
-                <br><br>
-                <audio id="audio" src="./imagens/shingeki.mp3" autoplay="false"></audio>
-                <button id="bt" onclick="bt_sort()"> Sortear Personagem 💕 </button>
-                <div id="imagem">
-    
+                </div>
+                <div class="q4">
+
+                </div>
+                <div class="q5">
+
+                    <div class="sorteio">
+                        <h2 class="sorteioP">Sorteio de personagem😍</h2>
+                        <p>Aperte o botão e sorteie um personagem </p>
+                        <br><br>
+                        <audio id="audio" src="../imagens/shingeki.mp3" autoplay="false"></audio>
+                        <button id="bt" onclick="bt_sort()"> Sortear Personagem 💕 </button>
+                        <div id="imagem">
+
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
-        
-          
-       
+
+
 
 
 
@@ -50,8 +62,33 @@
 
 </html>
 
+<!--  <div class="sorteio">
+                <h2 class="sorteioP">Sorteio de personagem😍</h2>
+                <p>Aperte o botão e sorteie um personagem </p>
+                <br><br>
+                <audio id="audio" src="../imagens/shingeki.mp3" autoplay="false"></audio>
+                <button id="bt" onclick="bt_sort()"> Sortear Personagem 💕 </button>
+                <div id="imagem">
+    
+                </div> -->
+
 <script>
-  function bt_sort() {
+    var p1 = 0;
+    var p2 = 0;
+    var p3 = 0;
+    var p4 = 0;
+    var p5 = 0;
+    var p6 = 0;
+    var p7 = 0;
+    var p8 = 0;
+    var p9 = 0;
+    var p10 = 0;
+    var p11 = 0;
+    var p12 = 0;
+    var p13 = 0;
+    var p14 = 0;
+    var p15 = 0;
+    function bt_sort() {
         var sound = document.getElementById("audio");
         sound.play();
         imagem.innerHTML = '';
@@ -59,70 +96,108 @@
         for (var index = 1; index <= 1; index++) {
             var aleatorio = (Number(Math.random() * 15)).toFixed();
             if (aleatorio == 1 || aleatorio == 0) {
+                p1++;
                 imagem.innerHTML += `O pesonagem sorteado foi o Levi
-                    <img src="../imagens/levi.jpg" style="height:200px;">
+                    <img src="../imagens/levi.jpg" style="height:100px;"> <br>
+                    Esse personagem foi sorteado ${p1} vezes
                 `
             } else if (aleatorio == 2) {
+                p2++;
                 imagem.innerHTML += `O pesonagem sorteado foi o Eren
-                    <img src="../imagens/eren.jpg"style="height:200px;">
+                    <img src="../imagens/eren.jpg"style="height:100px;"><br>
+                    Esse personagem foi sorteado ${p2} vezes
                    
                     
                 `
             } else if (aleatorio == 3) {
+                p3++;
                 imagem.innerHTML += `O pesonagem sorteado foi o Armin
-                    <img src="../imagens/armin.jpg"style="height:200px;">
+                    <img src="../imagens/armin.jpg"style="height:100px;"> <br>
+                    Esse personagem foi sorteado ${p3} vezes
                 `
             } else if (aleatorio == 4) {
+                p4++;
                 imagem.innerHTML += `O pesonagem sorteado foi o Erwin
-                    <img src="../imagens/erwin.jpg"style="height:200px;">
+                    <img src="../imagens/erwin.jpg"style="height:100px;"> <br>
+                    Esse personagem foi sorteado ${p4} vezes
                 `
             } else if (aleatorio == 5) {
+                p5++;
                 imagem.innerHTML += `O pesonagem sorteado foi a Hange
-                    <img src="../imagens/hange.jpg"style="height:200px;">
+                    <img src="../imagens/hange.jpg"style="height:100px;"> <br>
+                    Esse personagem foi sorteado ${p5} vezes
                 `
             } else if (aleatorio == 6) {
+                p6++;
                 imagem.innerHTML += `O pesonagem sorteado foi a Historia
-                    <img src="../imagens/historia.png"style="height:200px;">
+                    <img src="../imagens/historia.png"style="height:100px;"><br>
+                    Esse personagem foi sorteado ${p6} vezes
                 `
             } else if (aleatorio == 7) {
+                p7++;
                 imagem.innerHTML += `O pesonagem sorteado foi a Mikasa
-                    <img src="../imagens/mikasa.jpg"style="height:200px;">
+                    <img src="../imagens/mikasa.jpg"style="height:100px;"><br>
+                    Esse personagem foi sorteado ${p7} vezes
                 `
             } else if (aleatorio == 8) {
+                p8++;
                 imagem.innerHTML += `O pesonagem sorteado foi a Ymir
-                    <img src="../imagens/ymir.jpg"style="height:200px;">
+                    <img src="../imagens/ymir.jpg"style="height:100px;"><br>
+                    Esse personagem foi sorteado ${p8} vezes
+
                 `
             } else if (aleatorio == 9) {
+                p9++;
                 imagem.innerHTML += `O pesonagem sorteado foi o Galliard
-                    <img src="../imagens/galliard.jpg"style="height:200px;">
+                    <img src="../imagens/galliard.jpg"style="height:100px;"><br>
+                    Esse personagem foi sorteado ${p9} vezes
+
                 `
             } else if (aleatorio == 10) {
+                p10++;
                 imagem.innerHTML += `O pesonagem sorteado foi o Bertholdt
-                    <img src="../imagens/bertholdt.jpg"style="height:200px;">
+                    <img src="../imagens/bertholdt.jpg"style="height:100px;"><br>
+                    Esse personagem foi sorteado ${p10} vezes
+
                 `
             } else if (aleatorio == 11) {
+                p11++;
                 imagem.innerHTML += `O pesonagem sorteado foi a Sasha
-                    <img src="../imagens/sasha.jpg"style="height:200px;">
+                    <img src="../imagens/sasha.jpg"style="height:100px;"><br>
+                    Esse personagem foi sorteado ${p11} vezes
+
                 `
             } else if (aleatorio == 12) {
+                p12++;
                 imagem.innerHTML += `O pesonagem sorteado foi o Falco
-                    <img src="../imagens/falco.jpg"style="height:200px;">
+                    <img src="../imagens/falco.jpg"style="height:100px;"><br>
+                    Esse personagem foi sorteado ${p12} vezes
+
                 `
             } else if (aleatorio == 13) {
+                p13++;
                 imagem.innerHTML += `O pesonagem sorteado foi a Gabi
-                    <img src="../imagens/gabi.jpg"style="height:200px;">
+                    <img src="../imagens/gabi.jpg"style="height:100px;"><br>
+                    Esse personagem foi sorteado ${p13} vezes
+
                 `
             } else if (aleatorio == 14) {
+                p14++;
                 imagem.innerHTML += `O pesonagem sorteado foi a Pieck
-                    <img src="../imagens/pieck.jpg"style="height:200px;">
+                    <img src="../imagens/pieck.jpg"style="height:100px;"><br>
+                    Esse personagem foi sorteado ${p14} vezes
+
                 `
             } else if (aleatorio == 15) {
+                p15++;
                 imagem.innerHTML += `O pesonagem sorteado foi o Reiner
-                    <img src="../imagens/reiner.jpg"style="height:200px;">
+                    <img src="../imagens/reiner.jpg"style="height:100px;"><br>
+                    Esse personagem foi sorteado ${p15} vezes
+
                 `
             }
 
         }
     }
-   
+
 </script>

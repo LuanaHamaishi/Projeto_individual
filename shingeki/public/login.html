@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style3.css">
   <link rel="shortcut icon" href="./imagens/icon.jpg" type="image/x-icon">
+  <script src="./assets/js/login.js"></script>
 
   <title>Login</title>
 </head>
@@ -19,9 +20,7 @@
       <ul class="navbar">
         <li ><a href="index.html">Início</a></li>
         <li class="active"><a href="login.html">Login</a></li>
-        <li>|</li>
         <li ><a href="cadastro.html">Cadastro</a></li>
-        <li><a href="contato.html">Contato</a></li>
       </ul>
     </div>
   </div>
@@ -61,9 +60,9 @@
         document.getElementById("form_login").reset();
     }
 
-    function ent() {
-        var sound = document.getElementById("audio");
-          sound.play();
+    function entrar() {
+        var sound = document.getElementById("audio");/* 
+          sound.play(); */
 
         var formulario = new URLSearchParams(new FormData(document.getElementById("form_login")));
 
@@ -73,16 +72,15 @@
         console.log("FORM LOGIN: ", email);
         console.log("FORM SENHA: ", senha);
 
-        // TODO: VERIFICAR AS VALIDAÇÕES QUE ELES ESTÃO APRENDENDO EM ALGORITMOS 
         if (email == "" || senha == "") {
             window.alert("Preencha todos os campos para prosseguir!");
-            finalizarAguardar();
+            // finalizarAguardar();
             return false;
         }
 
         if (email.indexOf("@") == -1 || email.indexOf(".com") == -1) {
             window.alert("Ops, e-mail inválido! Verifique e tente novamente.");
-            finalizarAguardar();
+            // finalizarAguardar();
             return false;
         }
 
@@ -104,8 +102,8 @@
                     sessionStorage.ID_USUARIO = json.id;
 
                     setTimeout(function () {
-                        window.location = "../public/dashboard/dashboard.html";
-                    }, 1000); // apenas para exibir o loading
+                        window.location = "./dashboard/dashboard.html";
+                    }, 1000); 
 
                 });
 
@@ -113,10 +111,10 @@
 
                 console.log("Houve um erro ao tentar realizar o login!");
 
-                resposta.text().then(texto => {
+               /*  resposta.text().then(texto => {
                     console.error(texto);
-                    finalizarAguardar(texto);
-                });
+                     finalizarAguardar(texto); 
+                }); */
             }
 
         }).catch(function (erro) {
