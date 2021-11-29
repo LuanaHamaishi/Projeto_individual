@@ -7,13 +7,13 @@ CREATE TABLE usuario (
 	senha VARCHAR(50),
 );
 
-CREATE TABLE aviso (
+/* CREATE TABLE aviso (
 	id INT PRIMARY KEY IDENTITY(1,1),
 	titulo VARCHAR(100),
     descricao VARCHAR(150),
 	fk_usuario INT FOREIGN KEY REFERENCES usuario(id)
 ); 
-
+ */
 
 CREATE DATABASE Shingeki;
 

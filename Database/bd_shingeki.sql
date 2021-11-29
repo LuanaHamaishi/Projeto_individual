@@ -9,14 +9,7 @@ CREATE TABLE usuario (
     senha VARCHAR(50)
 );
 
-CREATE TABLE aviso (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    titulo VARCHAR(100),
-    descricao VARCHAR(150),
-    fk_usuario INT,
-    FOREIGN KEY (fk_usuario)
-        REFERENCES usuario (id)
-);
+
 
 
 select * from usuario;

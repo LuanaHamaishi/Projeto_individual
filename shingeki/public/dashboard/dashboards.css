@@ -13,7 +13,7 @@ body{
 
 
 .bar {
-    height: 250vh;
+    height: 280vh;
     width: 10vw;
     justify-content: center;
     color: whitesmoke;
@@ -114,6 +114,13 @@ body{
     display: flex;
     width: 90vw;
     font-weight: 600;
+}
+
+
+.video{
+    justify-content:center;
+    margin-top: 10%;
+    margin-left: 25%;
 }
 
 

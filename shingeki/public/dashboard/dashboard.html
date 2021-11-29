@@ -15,7 +15,7 @@
 </head>
 <!-- onload="validarSessao()"> -->
 
-<body>
+<body >
 
 
     <div class="container">
@@ -78,10 +78,18 @@
 
                     </div>
                 </div>
+                
+                    <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/WBPbuwHR5vs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+                    <button onclick="assistir()">Assistir o Episódio 1</button>
+               
             </div>
         </div>
 
-
+        
+           
 
 
 
@@ -230,6 +238,10 @@
 
     function sair(){
         window.location.href = "../index.html";
+    }
+
+    function assistir(){
+        window.location = "plus.html"
     }
 
 
