@@ -4,7 +4,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body{
-    background: url('../imagens/background01.png') center center no-repeat fixed; 
+    background: url('../imagens/banner4.png') center center no-repeat fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -13,13 +13,26 @@ body{
 
 
 .bar {
-    height: 100vh;
-    width: 20vw;
+    height: 250vh;
+    width: 10vw;
     justify-content: center;
     color: whitesmoke;
     border-right: solid rgb(170, 168, 168) 3px;
-    background-color: rgba(0, 0, 0, 0.349);
+    background-image: url('../imagens/snkbar.png');
+    background-repeat: no-repeat;
+    background-size: cover ;
     
+}
+
+ .power{
+    height: 50px;
+}
+
+.out{
+    margin-top: 1250%;
+    margin-left: 25%;
+    border-radius: 50px;
+    background-color: transparent;
 }
 
  .bar p {
@@ -44,35 +57,63 @@ body{
 }
 
 .q1{
-    background-color: black;
-    height: 13vh;
-    width: 10vw;
+  /*   background-color: rgba(224, 194, 194, 0.226);
+     */
+    height: 150vh;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+}
+.ph2{
+    margin-left: 30%;
+    color: rgb(49, 25, 30);
+    
+}
+.perso{
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;/* 
+    margin-left: 9px; */
+    margin-top: 8%;
+    font-weight: 550;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    background-color: rgba(255, 235, 205, 0.534);
+}
+.perso img{
+    height: 150px;
+    width: 150px;
+    border-radius: 20px;
+}
+.eren {
+    display: flex;
+    margin-left: 9px;
+    flex-direction: column;
+    width: 33%;
+}
+.mikasa {
+    display: flex;
+    margin-left: 9px;
+    width: 33%;
+    flex-direction: column;
+}
+.armin {
+    display: flex;
+    margin-left: 9px;
+    width: 33%;
+    flex-direction: column;
 }
 
-.q2{
-    background-color: rgb(133, 48, 48);
-    height: 20vh;
-    width: 25vw;
 
-
-}
-
-.q3{
-    background-color: rgb(160, 107, 107);
-    height: 10vh;
-    width: 15vw;
-}
-
-.q4{
-    background-color: rgb(34, 97, 48);
-    height: 10vh;
-    width: 19vw;
-}
 
 .q5{
-    background-color: rgb(33, 54, 148);
-    width: 89vw;
     display: flex;
+    width: 90vw;
+    font-weight: 600;
 }
 
 
@@ -85,18 +126,20 @@ body{
     height: 33px;
     width: 200px;
     border-radius: 22px 3px;
-    background-color: #ca905d;
+    background-image:url('../imagens/button.png');
     border-color: #996f2c;
     transition: 0.3s;
     margin-bottom: 20px;
+    color: rgb(185, 68, 68);
+
     
 }
 #bt:hover{
-    background-color: rgb(236, 225, 159);
-    color: rgb(73, 4, 4);
+    color: rgb(185, 68, 68);
     height: 40px;
     width: 250px;
     border-radius: 25px 5px;
+    font-weight: 600;
 
 }
 

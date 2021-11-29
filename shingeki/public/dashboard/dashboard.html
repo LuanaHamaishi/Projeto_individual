@@ -21,21 +21,49 @@
     <div class="container">
         <div class="bar">
             <h2>Shingeki no Kyojin</h1>
+                <button onclick="sair()" class="out"><img src="../imagens/power.png" class="power"></button>
         </div>
         <div class="container">
             <div class="partes">
                 <div class="q1">
+                    <div class="info">
+                        <h2 class="ph2">Os personagens principais</h2>  
+                        <div class="perso">
+                            <div class="eren">
+                                <img src="../imagens/erenicon.jpg">
+                                <h2>Eren</h2>
+                                <p>
+                                    Eren Yeager (エ レ ン ・ イ ェ ー ガ ー Eren Yēgā?) É um ex-membro da Divisão de <br> Reconhecimento e o principal protagonista de Attack on Titan. Ele morou no ,<br>Distrito de Shiganshina com seus pais e sua irmã adotiva Mikasa Ackerman até <br>a queda da Muralha Maria. Durante o incidente, Eren testemunhou <br>impotentemente sua mãe sendo comida por um Titã. Este evento levaria ao ódio <br>intenso de Eren pelos Titãs, quando ele jurou varrer todos eles da face da Terra.
 
-                </div>
-                <div class="q2">
+<br>Logo depois seu pai, Grisha Yeager, o encontrou e deu-lhe a chave de seu porão, instruindo Eren a encontrá-la a <br>todo custo e retomar a Muralha Maria. Ele então injetou em Eren a Injeção de Titã.
+<br>
+<br>No ano de 847, Eren, Mikasa e seu melhor amigo Armin Arlert juntaram-se ao 104º Esquadrão de Recrutas. Os três <br>se formaram com Eren sendo o 5º melhor, e eles se juntaram a Divisão de Reconhecimento após a batalha do <br>Distrito de Trost.
 
-                </div>
-                <div class="q3">
+<br>Depois de encontrar o porão e desbloquear as memórias de seu pai, Eren aprendeu sobre a verdade sobre o que os <br>Titãs são, assim como a história de Eldia e Marley. Eren então prometeu libertar sua casa de seu verdadeiro <br>inimigo o resto da humanidade que vive do outro lado do oceano.
+                                </p>
+                            </div>
+                            <div class="mikasa">
+                                <img src="../imagens/mikasaicon.jpg">
+                                <h2>Mikasa</h2>
+                                <p>
+                                    Mikasa Ackerman (ミ カ サ ・ ア ッ カ ー マ ン Mikasa Akkāman?) é a irmã adotiva <br>de Eren Yeager e um dos dois deuteragonistas da série, junto com Armin Arlert.
 
+                                    <br>  Depois que seus pais biológicos foram assassinados por traficantes de <br>humanos, Mikasa foi resgatada por Eren Yeager e morou com ele e seus pais, <br>Grisha e Carla, antes da queda da Muralha Maria. Ela é a última descendente <br>do clã Shogun que ficou na Ilha Paradis, portanto relacionada com a família <br>Azumabito, e detém um poder político significativo em Hizuru.
+                                    <br>
+                                    <br> Embora deseje apenas viver uma vida pacífica, Mikasa entrou para o serviço <br>militar onde é considerada a melhor soldado entre o 104º Esquadrão de <br>Recrutas. Mais tarde, ela se alista a Divisão de Reconhecimento para seguir <br>e proteger Eren. Ela está atualmente servindo como oficial (上官 Jōkan?).
+                                </p>
+                            </div> 
+                            <div class="armin">
+                                <img src="../imagens/arminicon.jpg">
+                                <h2>Armin</h2>
+                                <p>
+                                    Armin Arlert (アルミン・アルレルト Arumin Arureruto) é o 15° e atual comandante <br>(団 長 Danchō) da Divisão de Reconhecimento assim nomeado por Hange Zoë <br>antes de sua morte. Ele também é amigo de infância de Eren Yeager e Mikasa <br>Ackerman e um dos dois deuteragonistas da série. Embora pareça ser <br>fisicamente o mais fraco do 104º Esquadrão de Recrutas, sua inteligência e <br>gênio estratégico fazem dele um recurso inestimável, especialmente quando em <br>conjunto com a mente de Hange Zoë. Após a batalha do Distrito de <br>Shiganshina, tornou-se o novo portador do Titã Colossal ao devorar Bertholdt <br>Hoover como um Titã irracional.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="q4">
-
-                </div>
+              
                 <div class="q5">
 
                     <div class="sorteio">
@@ -98,13 +126,13 @@
             if (aleatorio == 1 || aleatorio == 0) {
                 p1++;
                 imagem.innerHTML += `O pesonagem sorteado foi o Levi
-                    <img src="../imagens/levi.jpg" style="height:100px;"> <br>
+                    <img src="../imagens/levi.jpg" style="height:100px;"> <br><br>
                     Esse personagem foi sorteado ${p1} vezes
                 `
             } else if (aleatorio == 2) {
                 p2++;
                 imagem.innerHTML += `O pesonagem sorteado foi o Eren
-                    <img src="../imagens/eren.jpg"style="height:100px;"><br>
+                    <img src="../imagens/eren.jpg"style="height:100px;"><br><br>
                     Esse personagem foi sorteado ${p2} vezes
                    
                     
@@ -112,86 +140,86 @@
             } else if (aleatorio == 3) {
                 p3++;
                 imagem.innerHTML += `O pesonagem sorteado foi o Armin
-                    <img src="../imagens/armin.jpg"style="height:100px;"> <br>
+                    <img src="../imagens/armin.jpg"style="height:100px;"> <br><br>
                     Esse personagem foi sorteado ${p3} vezes
                 `
             } else if (aleatorio == 4) {
                 p4++;
                 imagem.innerHTML += `O pesonagem sorteado foi o Erwin
-                    <img src="../imagens/erwin.jpg"style="height:100px;"> <br>
+                    <img src="../imagens/erwin.jpg"style="height:100px;"> <br><br>
                     Esse personagem foi sorteado ${p4} vezes
                 `
             } else if (aleatorio == 5) {
                 p5++;
                 imagem.innerHTML += `O pesonagem sorteado foi a Hange
-                    <img src="../imagens/hange.jpg"style="height:100px;"> <br>
+                    <img src="../imagens/hange.jpg"style="height:100px;"> <br><br>
                     Esse personagem foi sorteado ${p5} vezes
                 `
             } else if (aleatorio == 6) {
                 p6++;
                 imagem.innerHTML += `O pesonagem sorteado foi a Historia
-                    <img src="../imagens/historia.png"style="height:100px;"><br>
+                    <img src="../imagens/historia.png"style="height:100px;"><br><br>
                     Esse personagem foi sorteado ${p6} vezes
                 `
             } else if (aleatorio == 7) {
                 p7++;
                 imagem.innerHTML += `O pesonagem sorteado foi a Mikasa
-                    <img src="../imagens/mikasa.jpg"style="height:100px;"><br>
+                    <img src="../imagens/mikasa.jpg"style="height:100px;"><br><br>
                     Esse personagem foi sorteado ${p7} vezes
                 `
             } else if (aleatorio == 8) {
                 p8++;
                 imagem.innerHTML += `O pesonagem sorteado foi a Ymir
-                    <img src="../imagens/ymir.jpg"style="height:100px;"><br>
+                    <img src="../imagens/ymir.jpg"style="height:100px;"><br><br>
                     Esse personagem foi sorteado ${p8} vezes
 
                 `
             } else if (aleatorio == 9) {
                 p9++;
                 imagem.innerHTML += `O pesonagem sorteado foi o Galliard
-                    <img src="../imagens/galliard.jpg"style="height:100px;"><br>
+                    <img src="../imagens/galliard.jpg"style="height:100px;"><br><br>
                     Esse personagem foi sorteado ${p9} vezes
 
                 `
             } else if (aleatorio == 10) {
                 p10++;
                 imagem.innerHTML += `O pesonagem sorteado foi o Bertholdt
-                    <img src="../imagens/bertholdt.jpg"style="height:100px;"><br>
+                    <img src="../imagens/bertholdt.jpg"style="height:100px;"><br><br>
                     Esse personagem foi sorteado ${p10} vezes
 
                 `
             } else if (aleatorio == 11) {
                 p11++;
                 imagem.innerHTML += `O pesonagem sorteado foi a Sasha
-                    <img src="../imagens/sasha.jpg"style="height:100px;"><br>
+                    <img src="../imagens/sasha.jpg"style="height:100px;"><br><br>
                     Esse personagem foi sorteado ${p11} vezes
 
                 `
             } else if (aleatorio == 12) {
                 p12++;
                 imagem.innerHTML += `O pesonagem sorteado foi o Falco
-                    <img src="../imagens/falco.jpg"style="height:100px;"><br>
+                    <img src="../imagens/falco.jpg"style="height:100px;"><br><br>
                     Esse personagem foi sorteado ${p12} vezes
 
                 `
             } else if (aleatorio == 13) {
                 p13++;
                 imagem.innerHTML += `O pesonagem sorteado foi a Gabi
-                    <img src="../imagens/gabi.jpg"style="height:100px;"><br>
+                    <img src="../imagens/gabi.jpg"style="height:100px;"><br><br>
                     Esse personagem foi sorteado ${p13} vezes
 
                 `
             } else if (aleatorio == 14) {
                 p14++;
                 imagem.innerHTML += `O pesonagem sorteado foi a Pieck
-                    <img src="../imagens/pieck.jpg"style="height:100px;"><br>
+                    <img src="../imagens/pieck.jpg"style="height:100px;"><br><br>
                     Esse personagem foi sorteado ${p14} vezes
 
                 `
             } else if (aleatorio == 15) {
                 p15++;
                 imagem.innerHTML += `O pesonagem sorteado foi o Reiner
-                    <img src="../imagens/reiner.jpg"style="height:100px;"><br>
+                    <img src="../imagens/reiner.jpg"style="height:100px;"><br><br>
                     Esse personagem foi sorteado ${p15} vezes
 
                 `
@@ -199,5 +227,10 @@
 
         }
     }
+
+    function sair(){
+        window.location.href = "../index.html";
+    }
+
 
 </script>
