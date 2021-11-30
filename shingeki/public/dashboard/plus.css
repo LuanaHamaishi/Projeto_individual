@@ -38,3 +38,7 @@ h1{
 height: 35px;
 width: 400px;
 }
+
+button {
+    cursor: pointer;
+}

@@ -21,6 +21,7 @@
     <div class="container">
         <div class="bar">
             <h2>Shingeki no Kyojin</h1>
+                <button class="mural" onclick="mural()">Mural de avisos</button>
                 <button onclick="sair()" class="out"><img src="../imagens/power.png" class="power"></button>
         </div>
         <div class="container">
@@ -83,7 +84,7 @@
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/WBPbuwHR5vs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
 
-                    <button onclick="assistir()">Assistir o Episódio 1</button>
+                    <button class="btn" onclick="assistir()">Assistir o Episódio 1</button>
                
             </div>
         </div>
@@ -241,7 +242,10 @@
     }
 
     function assistir(){
-        window.location = "plus.html"
+        window.location = "plus.html";
+    }
+    function mural() {
+        window.location = 'mural.html';
     }
 
 

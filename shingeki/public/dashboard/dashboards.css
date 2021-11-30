@@ -1,19 +1,23 @@
 *{
     margin: 0;
-    padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body{
     background: url('../imagens/banner4.png') center center no-repeat fixed; 
-    -webkit-background-size: cover;
+  /*   -webkit-background-size: cover;
     -moz-background-size: cover;
-    -o-background-size: cover;
+    -o-background-size: cover; */
     background-size: cover;
+
+}
+
+button {
+    cursor: pointer;
 }
 
 
 .bar {
-    height: 280vh;
+    height: 300vh;
     width: 10vw;
     justify-content: center;
     color: whitesmoke;
@@ -21,6 +25,7 @@ body{
     background-image: url('../imagens/snkbar.png');
     background-repeat: no-repeat;
     background-size: cover ;
+    margin:0;
     
 }
 
@@ -29,7 +34,7 @@ body{
 }
 
 .out{
-    margin-top: 1250%;
+    margin-top: 1400%;
     margin-left: 25%;
     border-radius: 50px;
     background-color: transparent;
@@ -76,8 +81,7 @@ body{
 .perso{
     display: flex;
     flex-direction: row; 
-    justify-content: center;/* 
-    margin-left: 9px; */
+    justify-content: center;
     margin-top: 8%;
     font-weight: 550;
     color: rgb(0, 0, 0);
@@ -125,8 +129,35 @@ body{
 
 
 
+.btn{
+    display: flex;
+    flex-direction: row;
+    padding: auto;
+    justify-content: center;
+    margin: auto;
+    margin-top: 8%;
+    background-color: rgb(255, 167, 136);
+    height: 26px;
+    width: 300px;
+    border-radius: 20px ;
+    color: darkred;
+    font-weight: 600;
+    transition: 0.2s;
+}
 
+.btn:hover{
+    display: flex;
+    padding-top: 7px;
+height: 35px;
+width: 400px;
+}
 
+.mural{
+    background-color:  rgb(255, 167, 136);
+    color: darkred;
+    border-radius: 20px;
+    margin-top: 20px;
+}
 
 
  #bt{
